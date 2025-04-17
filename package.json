@@ -1,0 +1,23 @@
+{
+  "name": "ginresponse",
+  "version": "0.0.0",
+  "description": "package de format de reponse pour gin",
+  "main": "release.config.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsevenpack/ginresponse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsevenpack/ginresponse/issues"
+  },
+  "homepage": "https://github.com/nsevenpack/ginresponse#readme"
+}
