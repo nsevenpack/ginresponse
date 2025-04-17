@@ -1,0 +1,11 @@
+services:
+  ginresponse-pack-go:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: ginresponse-pack-go
+    image: ginresponse-pack-go
+    volumes:
+      - ../:/app
+    stdin_open: true
+    tty: true
