@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/nsevenpack/ginresponse/compare/v1.1.0...v1.1.1) (2025-04-18)
+
+
+### Bug Fixes
+
+* add doc for return json ([50b27c5](https://github.com/nsevenpack/ginresponse/commit/50b27c50380da7ea0639323117658ba01f690a64))
+
 # [1.1.0](https://github.com/nsevenpack/ginresponse/compare/v1.0.0...v1.1.0) (2025-04-18)
 
 
