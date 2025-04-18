@@ -86,3 +86,14 @@ func init() {
 
 // maintenant ginresponse utilise votre propre format de données de réponse (dans notre exemple en JSON)
 ```
+
+- ginresponse vous donne un struct d'erreur `ginresponse.ErrorModel` qui contient les champs suivants
+```go
+type ErrorModel struct {
+	Message string `json:"message"`
+	Type   string `json:"type"`
+	Field  string `json:"field"`
+	Detail string `json:"detail"`
+}
+```
+vous pouvez l'utiliser pour renvoyer des erreurs plus détaillées
