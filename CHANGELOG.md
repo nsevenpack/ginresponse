@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/nsevenpack/ginresponse/compare/v1.0.0...v1.1.0) (2025-04-18)
+
+
+### Features
+
+* add a struct Error for help construct objet error for return json ([47522e5](https://github.com/nsevenpack/ginresponse/commit/47522e50fb197b42ec6fce4a42d989c54eca5a38))
+
 # 1.0.0 (2025-04-17)
 
 
