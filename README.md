@@ -58,6 +58,82 @@ func GetUser(c *gin.Context) {
 }
 ```
 
+- voici le retour de la réponse (map)
+```go
+// la map utilisé en interne
+resp := map[string]interface{}{
+	"message":   message,
+	"data":     nil,
+	"error":    nil,
+	"meta": map[string]interface{}{
+		"status":    status,
+		"path":      c.Request.URL.Path,
+		"method":    c.Request.Method,
+		"timestamp": time.Now().Format(time.RFC3339), 
+	},
+}
+```
+
+- voici le retour de la réponse (json)
+```json
+// success
+{
+  "message": "Utilisateur récupéré avec succès",
+  "data": {
+    "id": 42,
+    "name": "Alice Dupont",
+    "email": "alice@example.com",
+    "role": "admin"
+  },
+  "error": null,
+  "meta": {
+    "status": 200,
+    "path": "/api/users/42",
+    "method": "GET",
+    "timestamp": "2025-04-17T20:10:00Z"
+  }
+}
+
+// erreur simple
+{
+  "message": "Aucun utilisateur trouvé avec cet ID",
+  "data": null,
+  "error": "User not found",
+  "meta": {
+    "status": 404,
+    "path": "/api/users/999",
+    "method": "GET",
+    "timestamp": "2025-04-17T20:10:00Z"
+  }
+}
+
+// erreur utilisant une slice du struct d'erreur
+{
+  "message": "Erreur de validation",
+  "data": null,
+  "error": [
+	{
+		"message": "Le champ 'email' est requis",
+		"type": "validation",
+		"field": "email",
+		"detail": "L'email doit être au format valide"
+	},
+	{
+		"message": "Le champ 'password' est requis",
+		"type": "validation",
+		"field": "password",
+		"detail": ""
+	}
+ ],
+  "meta": {
+	"status": 400,
+	"path": "/api/users/42",
+	"method": "POST",
+	"timestamp": "2025-04-17T20:10:00Z"
+  }
+}
+```
+
 - vous pouvez creer vos propre formatter en implementant l'interface `ginresponse.Formatter`
 ```go
 // creer votre propre formatter
