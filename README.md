@@ -43,11 +43,11 @@ donner en parametre le context de gin et les parametres de la reponse
 ```go
 Success(c *gin.Context, message string, data interface{})
 Created(c *gin.Context, message string, data interface{})
-BadRequest(c *gin.Context, message string, data interface{})
-Unauthorized(c *gin.Context, message string, data interface{})
-Forbidden(c *gin.Context, message string, data interface{})
-NotFound(c *gin.Context, message string, data interface{})
-InternalServerError(c *gin.Context, message string, data interface{})
+BadRequest(c *gin.Context, message string, err interface{})
+Unauthorized(c *gin.Context, message string, err interface{})
+Forbidden(c *gin.Context, message string, err interface{})
+NotFound(c *gin.Context, message string, err interface{})
+InternalServerError(c *gin.Context, message string, err interface{})
 NoContent(c *gin.Context, message string)
 
 // exemple d'utilisatoin
