@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/nsevenpack/ginresponse/compare/v1.1.1...v1.2.0) (2025-05-11)
+
+
+### Features
+
+* add struct jsonformatter for swagger ([933f635](https://github.com/nsevenpack/ginresponse/commit/933f63575f8e070ad8f55f4a939a11fb6360cea8))
+
 ## [1.1.1](https://github.com/nsevenpack/ginresponse/compare/v1.1.0...v1.1.1) (2025-04-18)
 
 
