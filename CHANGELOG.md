@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/nsevenpack/ginresponse/compare/v1.2.2...v1.2.3) (2025-05-11)
+
+
+### Bug Fixes
+
+* delete empty value ([d46610a](https://github.com/nsevenpack/ginresponse/commit/d46610a40b6ec09e35ec38aab3478ca722f5b3c1))
+
 ## [1.2.2](https://github.com/nsevenpack/ginresponse/compare/v1.2.1...v1.2.2) (2025-05-11)
 
 
