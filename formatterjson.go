@@ -8,16 +8,30 @@ import (
 
 type JsonFormatter struct{}
 
+type JsonFormatterSwag struct {
+	Message string       `json:"message"`
+	Data    interface{}  `json:"data"`
+	Error   interface{}  `json:"error"`
+	Meta    JsonSwagMeta `json:"meta"`
+}
+
+type JsonSwagMeta struct {
+	Status    int    `json:"status"`
+	Path      string `json:"path"`
+	Method    string `json:"method"`
+	Timestamp string `json:"timestamp"`
+}
+
 func (f *JsonFormatter) Format(c *gin.Context, status int, message string, data interface{}, err interface{}) map[string]interface{} {
 	resp := map[string]interface{}{
-		"message":   message,
-		"data":     nil,
-		"error":    nil,
+		"message": message,
+		"data":    nil,
+		"error":   nil,
 		"meta": map[string]interface{}{
 			"status":    status,
 			"path":      c.Request.URL.Path,
 			"method":    c.Request.Method,
-			"timestamp": time.Now().Format(time.RFC3339), 
+			"timestamp": time.Now().Format(time.RFC3339),
 		},
 	}
 
