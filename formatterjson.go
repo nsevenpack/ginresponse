@@ -12,8 +12,8 @@ type EmptyObject map[string]interface{}
 
 type JsonFormatterSwag struct {
 	Message string       `json:"message"`
-	Data    EmptyObject  `json:"data" example:"{}"`
-	Error   EmptyObject  `json:"error" example:"{}"`
+	Data    EmptyObject  `json:"data"`
+	Error   EmptyObject  `json:"error"`
 	Meta    JsonSwagMeta `json:"meta"`
 }
 
