@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/nsevenpack/ginresponse/compare/v1.2.0...v1.2.1) (2025-05-11)
+
+
+### Bug Fixes
+
+* add type for data and error response swagger ([fb5f1bb](https://github.com/nsevenpack/ginresponse/commit/fb5f1bb21d1f8401da13037a28ce245f63040a23))
+
 # [1.2.0](https://github.com/nsevenpack/ginresponse/compare/v1.1.1...v1.2.0) (2025-05-11)
 
 
