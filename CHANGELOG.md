@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/nsevenpack/ginresponse/compare/v1.2.1...v1.2.2) (2025-05-11)
+
+
+### Bug Fixes
+
+* bug example ([105f483](https://github.com/nsevenpack/ginresponse/commit/105f483e677cdb4cfae9027eb7952891bc399b2b))
+
 ## [1.2.1](https://github.com/nsevenpack/ginresponse/compare/v1.2.0...v1.2.1) (2025-05-11)
 
 
