@@ -8,12 +8,10 @@ import (
 
 type JsonFormatter struct{}
 
-type EmptyObject map[string]interface{}
-
 type JsonFormatterSwag struct {
 	Message string       `json:"message"`
-	Data    EmptyObject  `json:"data"`
-	Error   EmptyObject  `json:"error"`
+	Data    struct{}     `json:"data"`
+	Error   struct{}     `json:"error"`
 	Meta    JsonSwagMeta `json:"meta"`
 }
 
